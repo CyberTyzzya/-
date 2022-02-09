@@ -1,0 +1,17 @@
+{% extends 'BASAAA.html' %}
+
+{% block title %}
+Обновление заказа
+{% endblock %}
+
+{% block body %}
+      <div class="container mt-5">
+          <h1 class="fw-light">Обновление заказа </h1>
+          <form method="POST">
+              <input type="text" name="title" id="title" class="from-control" value="{{ article.title }}" placeholder="Введите название заказа">
+              <textarea name="intro" id="intro" class="form-control"  placeholder="Введите точку и дату доставки">{{ article.intro }}</textarea><br>
+              <textarea name="text" id="text" class="form-control"  placeholder="Готов/ В процессе">{{ article.text }}</textarea><br>
+              <input type="submit" class="btn btn-success" value="Обновить заказ">
+          </form>
+       </div>
+{% endblock %}

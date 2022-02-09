@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+<header>
+  <div class="collapse bg-dark" id="navbarHeader">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-md-7 py-4">
+          <h4 class="text-white"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">О</font></font></h4>
+          <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
+        </div>
+        <div class="col-sm-4 offset-md-1 py-4">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container">
+      <a href="#" class="navbar-brand d-flex align-items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
+        <strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">AE</font></font></strong>
+         <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+           <a class="me-2 py-1 white text-decoration-none" href="/home">Главная страница</a>
+        <a class="me-2 py-1 white text-decoration-none" href="/Onas">Про нас</a>
+        <a class="me-2 py-1 white text-decoration-none" href="/create_zakaz">Создать заказ</a>
+             <a class="me-2 py-1 white text-decoration-none" href="/zakazi">Заказы</a>
+           <a class="me-2 py-1 white text-decoration-none" href="/login">Logout</a>
+      </nav>
+      </a>
+    </div>
+  </div>
+</header>
+
+    {% block body %}{% endblock %}
+
+<footer class="container text-muted py-5">
+  <div class="container">
+    <p class="float-end mb-1">
+      <a href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Вернуться наверх</font></font></a>
+    </p>
+    <p class="mb-1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Наши контакты:</font></font></p>
+      <p class="mb-1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Почта: kozlodernya@gmail.com;</font></font></p>
+      <p class="mb-1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Телефон: 88005553535;</font></font></p>
+  </div>
+</footer>
+</body>
+</html>

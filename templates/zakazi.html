@@ -1,0 +1,26 @@
+{% extends 'BASAAA.html' %}
+
+{% block title %}
+Заказы
+{% endblock %}
+
+{% block body %}
+<div class="container mt-5">
+    <h1 class="fw-light">Все заказы на сайте: </h1>
+
+
+
+    {% if articles|length > 0 %}
+    {% for el in articles %}
+    <div class="alert alert-info">
+        <h2>{{ el.title }}</h2>
+        <p>Готовность заказа: {{ el.text }}</p>
+        <p><b>Дата: {{ el.date.date() }}</b></p>
+        <a href="/zakazi/{{ el.id }}" class="btn btn-success">Детальнее</a>
+    </div>
+    {% endfor %}
+    {% else %}
+    <p>У нас ещё нету заказов на сайте</p>
+    {% endif %}
+</div>
+{% endblock %}

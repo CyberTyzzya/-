@@ -1,0 +1,19 @@
+{% extends 'BASAAA.html' %}
+
+{% block title %}
+Главная страница
+{% endblock %}
+
+{% block body %}
+      <section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light">Добро пожаловать на сайт Absolutely Everything.</h1>
+        <p class="lead text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Имя пользователя: {{ current_user.login }}; ID пользователся: ({{ current_user.id }}) </font></font>
+        <p class="lead text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Для ознокомления с сайтом, нажмите на вкладку "Про нас" на баре . </font></font>
+        <p class="lead text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Для просмотра времени доставки заказов в реальном времени, нажмите на вкладку "Заказы" на баре.</font></font></p>
+      </div>
+    </div>
+  </section>
+</div>
+{% endblock %}

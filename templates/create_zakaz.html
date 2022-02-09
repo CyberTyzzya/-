@@ -1,0 +1,18 @@
+{% extends 'BASAAA.html' %}
+
+{% block title %}
+Добавление заказов
+{% endblock %}
+
+{% block body %}
+      <div class="container mt-5">
+          <h1 class="fw-light">Добавление заказов </h1>
+          <form method="POST">
+              <input type="text" name="title" id="title" class="from-control" placeholder="Введите название заказа"><br>
+              <td>Пример заполнения (Дата доставки: 01.01.2001, 00:00 ; Точка доставки: ул. Пушкина;) </td>
+              <textarea name="intro" id="intro" class="form-control" placeholder="Введите точку и дату доставки"></textarea><br>
+              <textarea name="text" id="text" class="form-control" placeholder="Готов/ В процессе"></textarea><br>
+              <input type="submit" class="btn btn-success" value="Начать заказ">
+          </form>
+       </div>
+{% endblock %}
